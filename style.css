@@ -1,0 +1,94 @@
+.rounded-4 {
+  border-radius: 15px;
+}
+
+.rounded-5 {
+  border-radius: 20px;
+}
+
+.trending-tour, .top-destination, .testimonial {
+  padding-top: 6rem;
+}
+
+/* Navbar */
+.navbar {
+  transition: .3s;
+}
+/* Akhir Navbar */
+
+
+/* Header */
+header.header-home {
+  height: 70vh;
+  position: relative;
+  box-shadow: inset 0 200px 80px -100px white;
+}
+
+header.header-home::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background-image: url(images/Bukit\ Jaddih\ -\ Bangkalan-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -150px;
+  background-attachment: fixed;
+  filter: brightness(50%);
+  z-index: -999;
+}
+/* Akhir Header */
+
+
+/* Main */
+main {
+  padding: 6rem 0;
+}
+/* Akhir Main */
+
+
+/* Responsive Breakpoint */
+/* Laptop */
+@media (min-width: 1400px) {
+  header.header-home {
+    height: 500px;
+  }
+}
+
+/* Table */
+@media (min-width: 576px) {
+  header.header-home::before {
+    background-position: center 0;
+  }
+
+  .card.small-card {
+    width: 18rem;
+  }
+
+  img.img-content {
+    width: 50%;
+  }
+}
+
+
+/* Mobile Phone */
+@media (max-width: 576px) {
+  header {
+    height: 100vh;
+  }
+  
+  header::before {
+    background-position: center;
+  }
+  
+  .trending-tour .row:nth-child(1) p {
+    font-size: 18px !important;
+  }
+
+  img.image-content {
+    width: 100%;
+    height: 300px;
+  }
+}
